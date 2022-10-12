@@ -1,0 +1,164 @@
+
+    ---------------------------------------------NOTE----------------------------------------------------
+
+    Variabel ada 2 jenis:
+    - Primitive -> integer (int, long, byte, short), text (char), floating value (float, double), logical (boolean)
+    - Object/Reference -> String, Scanner, ArrayList, Integer, dll...
+
+    Class                   |               Object
+    -------------------------------------------------------
+    Variable                |               Attribute       -> Cirinya apa
+    Method                  |               Behavior        -> Bisa ngapain aja
+
+    Didalam objek ada constructor:
+        - Memiliki nama yg sama dengan objek/class
+        - Tidak mengembalikan nilai
+
+    Istilah-istilah dalam pemrograman java:
+        1. Package - digunakan untuk mengelompokkan class (folder), identik dengan namespace.
+        2. Import - digunakan untuk memanggil class lain. (Java.lang tidak perlu diimport)
+        3. Garbage collector - bertugas untuk membersihkan sampah di memory area.
+
+
+    Access          same        same        inheritance     universal
+    modifier        class       package
+    =====================================================================
+    private         v           x           x               x
+    [default]       v           v           x               x
+    protected       v           v           v               x
+    public          v           v           v               v
+
+
+    ENCAPSULATION
+    =============
+    1.  Tujuan encapsulation adalah untuk melindungi data supaya data tidak dapat diakses secara
+        langsung, sehingga data digunakan sesuai dengan aturan di aplikasi.
+    2.  Encapsulation dilakukan dengan memberikan access modifier "private"
+    3.  Disediakan method :
+            - Getter/accessor -> mengambil nilai variabel.
+            - Setter/mutator  -> memberi/mengubah nilai variabel.
+
+    EXTEND
+    ======
+    Digunakan ketika ada objek yg merupakan turunan dari objek lain.
+    Seluruh attribute dan behavior parrent semuanya diturunkan ke class turunannya.
+
+
+    OVERRIDING
+    ==========
+    Terjadi pada extend class, dimana method parent ditulis ulang
+    Syarat:
+        1. Nama method harus sama
+        2. Parameter harus sama
+        3. Return value harus sama
+        4. Access modifier tidak boleh lebih rendah dari parent
+    Dilakukan jika sub-class perlu memodifikasi behavior yang ada di super-class nya
+
+    OVERLODING
+    ==========
+    Memiliki lebih dari 1 method yang memiliki NAMA SAMA namun PARAMETER BERBEDA
+
+    TYPE CASTING
+    ============
+    Contoh :
+        Employee e1 = new Eployee();
+        Manager m1 = (Manager)e1;
+                     |=======|----> Bertujuan agar e1 dapat mengakses penuh fitur dari class Manager.
+
+    VARIABEL ARGUMEN
+    ================
+    Untuk membuat method yang memerlukan jumlah argumen yang tidak tentu
+    Contoh:
+            public int add(int ... params){
+            int res = 0;
+            for(int i:params){
+                res =+ i;
+                }
+            return res;
+            }
+
+    -------------------------------------------------------------------------------------------------
+    class TestStatic {
+        {                                                 -------\
+            System.out.println("Instance initializer");           |-----> Dijalankan setiap kali class
+        }                                                 -------/        dibentuk
+        static {                                          -------\
+            System.out.println("Static initializer");             |-----> Dijalankan saat objek pertama
+        }                                                 -------/        kali dikenali di memory
+
+        public TestStatic(){                              ------\         Dijalankan setiap
+            System.out.println("Constructor");                   |------> saat memanggil
+        }                                                 ------/         memanggil constructor
+    }
+    -------------------------------------------------------------------------------------------------
+
+    STATIC
+    ======
+    - Pada IDE IntelIJ dapat dicirikan dengan nama method/variabel yang dicetak miring
+    - Dapat dipanggil tanpa harus membentuk new object
+    - Merupakan atribut dari class objek, bukan milik objek tertentu, sehingga satu perubahan
+      menyebabkan perubahan pada seluruh objek.
+
+    ABSTRACT CLASS
+    ==============
+    - Tidak dapat diinstanciate langsung.
+    - Untuk membuat object dari abstract class, harus menggunakan subclass nya.
+
+    ABSTRACT METHOD
+    ===============
+    - Method yang tidak memiliki body, hanya deklarasi saja.
+    - Harus diimplementasikan oleh subclass nya (cara implementasi sama dengan override).
+
+        //Array -> Ukuran statis, bisa isi primitive & reference
+        //ArrayList -> Ukuran dinamis, hanya bisa isi reference, tidak bisa primitive
+        int arr[];
+        arr = new int[2];
+        ArrayList<Integer> arrL = new ArrayList<>();
+        String s1 = "HELLO";
+        String s2 = "HELLO";
+        s1 = s1.concat("UHUY");
+        System.out.println(s1);
+
+    NESTED CLASS
+    =============
+    - nested class boleh modifier apa saja
+    - outer class yang memiliki nested class di dalamnua, cuma boleh default & public
+
+
+
+    FINAL
+    -variable ==> constant, nilai tidak dapat diubah
+    - method ==> tidak dapat di-override
+    - class ==> tidak dapat di extends
+
+    di Interface, by default:
+    - method:   public abstract
+    - variable  public static final
+
+    Interface di Java 8:
+    - dapat mendefinisikan method dgn implementasi
+
+
+    JAVA COLLECTION
+    ===============
+    - List:
+        * ada urutan / ordering (menempati index)
+        * boleh duplicate
+
+    - Set:
+        * tidak ada urutan (tidak menempati index)
+        * tidak bisa ada duplicate
+        * Pengurutan Interface Comparable:
+            -
+        * Pengurutan Interface Comparator:
+            -
+
+    - Map:
+        * setiap element terdiri dari sepasang key dan value;
+        * satu key hanya dapat memiliki satu value
+
+
+    EXCEPTION
+    - checked exception     ==> wajib
+    - unchecked exception   ==> tidak wajib (RunTImeException dan subclassnya)
+

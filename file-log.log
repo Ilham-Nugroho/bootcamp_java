@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2022-10-11T03:33:56.037025100Z</date>
+  <millis>1665459236037</millis>
+  <nanos>25100</nanos>
+  <sequence>0</sequence>
+  <logger>id.co.mandiri.bankapp.day4_assertion.BelajarLogging</logger>
+  <level>INFO</level>
+  <class>id.co.mandiri.bankapp.day4_assertion.BelajarLogging</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Aplikasi berjalan</message>
+</record>
+<record>
+  <date>2022-10-11T03:33:56.104026300Z</date>
+  <millis>1665459236104</millis>
+  <nanos>26300</nanos>
+  <sequence>1</sequence>
+  <logger>id.co.mandiri.bankapp.day4_assertion.BelajarLogging</logger>
+  <level>INFO</level>
+  <class>id.co.mandiri.bankapp.day4_assertion.BelajarLogging</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Looping dimulai</message>
+</record>
+<record>
+  <date>2022-10-11T03:33:56.110025700Z</date>
+  <millis>1665459236110</millis>
+  <nanos>25700</nanos>
+  <sequence>2</sequence>
+  <logger>id.co.mandiri.bankapp.day4_assertion.BelajarLogging</logger>
+  <level>INFO</level>
+  <class>id.co.mandiri.bankapp.day4_assertion.BelajarLogging</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>nilai i sekarang: 0</message>
+</record>
+<record>
+  <date>2022-10-11T03:33:56.111028Z</date>
+  <millis>1665459236111</millis>
+  <nanos>28000</nanos>
+  <sequence>3</sequence>
+  <logger>id.co.mandiri.bankapp.day4_assertion.BelajarLogging</logger>
+  <level>INFO</level>
+  <class>id.co.mandiri.bankapp.day4_assertion.BelajarLogging</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>nilai i sekarang: 1</message>
+</record>
+<record>
+  <date>2022-10-11T03:33:56.112025200Z</date>
+  <millis>1665459236112</millis>
+  <nanos>25200</nanos>
+  <sequence>4</sequence>
+  <logger>id.co.mandiri.bankapp.day4_assertion.BelajarLogging</logger>
+  <level>INFO</level>
+  <class>id.co.mandiri.bankapp.day4_assertion.BelajarLogging</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>nilai i sekarang: 2</message>
+</record>
+<record>
+  <date>2022-10-11T03:33:56.113024700Z</date>
+  <millis>1665459236113</millis>
+  <nanos>24700</nanos>
+  <sequence>5</sequence>
+  <logger>id.co.mandiri.bankapp.day4_assertion.BelajarLogging</logger>
+  <level>INFO</level>
+  <class>id.co.mandiri.bankapp.day4_assertion.BelajarLogging</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>nilai i sekarang: 3</message>
+</record>
+<record>
+  <date>2022-10-11T03:33:56.114033400Z</date>
+  <millis>1665459236114</millis>
+  <nanos>33400</nanos>
+  <sequence>6</sequence>
+  <logger>id.co.mandiri.bankapp.day4_assertion.BelajarLogging</logger>
+  <level>INFO</level>
+  <class>id.co.mandiri.bankapp.day4_assertion.BelajarLogging</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>nilai i sekarang: 4</message>
+</record>
+<record>
+  <date>2022-10-11T03:33:56.115025300Z</date>
+  <millis>1665459236115</millis>
+  <nanos>25300</nanos>
+  <sequence>7</sequence>
+  <logger>id.co.mandiri.bankapp.day4_assertion.BelajarLogging</logger>
+  <level>INFO</level>
+  <class>id.co.mandiri.bankapp.day4_assertion.BelajarLogging</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Looping selesai</message>
+</record>
+<record>
+  <date>2022-10-11T03:33:56.116026800Z</date>
+  <millis>1665459236116</millis>
+  <nanos>26800</nanos>
+  <sequence>8</sequence>
+  <logger>id.co.mandiri.bankapp.day4_assertion.BelajarLogging</logger>
+  <level>INFO</level>
+  <class>id.co.mandiri.bankapp.day4_assertion.BelajarLogging</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Aplikasi selesai</message>
+</record>
+</log>
